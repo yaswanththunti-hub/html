@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelementselector</title>
+    <style>
+        h1::after{
+            content: " tikku";
+        }
+        h1::before{
+            content: "cindrella ";
+        }
+        h1::first-letter{
+            background-color: red;
+        }
+        h1::first-line{
+            background-color: beige;
+        }
+        li::marker{
+            content: "*";
+        }
+        li::selection{
+            background-color: yellow;
+            color: brown;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>weds</h1>
+    <h1>weds</h1>
+    <h1>weds</h1>
+    <h1>weds</h1>
+    <ul>
+        <li>riya</li>
+        <li>giya</li>
+        <li>liya</li>
+        <li>siya</li>
+    </ul>
+</body>
+</html>

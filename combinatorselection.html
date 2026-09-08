@@ -1,0 +1,40 @@
+<!-- Descendant(space)
+Child(>)
+Adjactent Sibling(+)
+General sibling(~) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinatorselector</title>
+    <style>
+        div h1{
+            background-color: blue;
+        }
+        div>h1{
+            background-color: aqua;
+        }
+        div+h1{
+            background-color: violet;
+        }
+        div~h1{
+            background-color: sandybrown;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hi</h1>
+        <h1>Hello</h1>
+        <span>
+            <h1>welcome</h1>
+        </span>
+        
+    </div>
+    <h1>Good</h1>
+    <u>underline</u>
+    <h2>Bye</h2>
+</body>
+</html>
