@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclassselector</title>
+    <style>
+        a:link{
+            color: gold;
+        }
+        a:visited{
+            color:deeppink;
+        }
+        a:active{
+            color: blue;
+        }
+        a:hover{
+            cursor:crosshair;
+        }
+        h1:first-child{
+            background-color: aqua;
+        }
+        h1:last-child{
+            background-color: blueviolet;
+        }
+        h1:nth-child(3){
+            background-color: rgb(52, 196, 167);
+        }
+        h2:first-of-type{
+            background-color: chartreuse;
+        }
+        h2:last-of-type{
+            background-color: crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>heading1</h1>
+    <a href="https://google.com">google</a>
+    <br>
+    <a href="https://facebook.com" target="_blank">facebook</a>
+   
+    <h2>heading2</h2>
+    <h1>heading3</h1>
+    <h1>heading4</h1>
+    <h2>heading5</h2>
+    <h1>heading6</h1>
+</body>
+</html>
