@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #linear{
+            height: 200px;
+            width: 400px;
+            border: 5px solid white;
+            /* pass color , direction,percentage */
+            background-image: linear-gradient(to top right, Red, Orange, Yellow, Green, Blue, Indigo,  Violet);
+        }
+        #radial{
+            height: 200px;
+            width: 400px;
+            border: 5px solid white;
+             /* pass color , shape ,percentage */
+            background-image: radial-gradient(circle, Red, Orange, Yellow, Green, Blue, Indigo,  Violet);
+        }
+        #conic{
+            height: 200px;
+            width: 400px;
+            border: 5px solid white;
+             /* pass color ,percentage */
+            background-image: conic-gradient( Red, Orange, Yellow, Green, Blue, Indigo,  Violet);
+        }
+    </style>
+</head>
+<body>
+    <div id="linear"></div>
+    <div id="radial"></div>
+    <div id="conic"></div>
+</body>
+</html>
