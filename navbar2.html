@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+        #navbar{
+            height: 75px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: green;
+        }
+        #menu{
+            height: 75px;
+            width: 400px;
+            
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #search{
+            height: 30px;
+            width: 400px;
+            
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #menu img{
+            height: 100px;
+
+        }
+        #menu a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="menu">
+            <img src="https://www.logo.wine/a/logo/Spotify/Spotify-Black-Logo.wine.svg" alt="">
+            <a href="">HOME</a><a href="">ABOUT</a><a href="">PROFILE</a></div>
+        <div id="search">
+            <label for="search"></label>
+            <input type="search" name="searching" id="search" placeholder="Search" >
+            <button>search</button>
+        </div>
+    </div>
+</body>
+</html>
