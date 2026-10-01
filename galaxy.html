@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #container{
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-image: url(https://cdn.hswstatic.com/gif/gettyimages-139494347.jpg);
+        }
+        #sun{
+            height: 50px;
+            width: 50px;
+            border: 2px solid white;
+            border-radius: 50%;
+            background-color: #DEAF2E;
+            box-shadow: 0px 0px 10px 10px gold;
+        }
+        #sun img{
+            height: 50px;
+            border-radius: 50%;
+        }
+        #mercury{
+            height: 133px;
+            width: 133px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position:absolute;
+            animation-name: planets;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .mercury{
+            height: 15px;
+            width: 15px;
+            border: 2px solid #5766A1;
+            background-color: #5766A1;
+            border-radius: 50%;
+            margin: 8px;
+        }
+        #venus{
+            height: 213px;
+            width: 213px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position:absolute;
+            animation-name: planets;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .venus{
+            height: 18px;
+            width: 18px;
+            border: 2px solid #C5C4C0;
+            background-color: #C5C4C0;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        #earth{
+            height: 300px;
+            width: 300px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position:absolute;
+            animation-name: planets;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .earth{
+            height: 20px;
+            width: 20px;
+            border: 2px solid #181B37;
+            background-color: #181B37;
+            border-radius: 50%;
+            margin: 32px;
+        }
+        #mars{
+            height: 400px;
+            width: 400px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position:absolute;
+            animation-name: planets;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .mars{
+            height: 16px;
+            width: 16px;
+            border: 2px solid #F6805A;
+            background-color: #F6805A;
+            border-radius: 50%;
+            margin: 47px;
+        }
+        #jupiter{
+            height: 500px;
+            width: 500px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position:absolute;
+            animation-name: planets;
+            animation-duration: 14s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .jupiter{
+            height: 30px;
+            width: 30px;
+            border: 2px solid #B99970;
+            background-color: #B99970;
+            border-radius: 50%;
+            margin: 61px;
+        }
+        #saturn{
+            height: 600px;
+            width: 600px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position:absolute;
+            animation-name: planets;
+            animation-duration: 16s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .saturn{
+            height: 27px;
+            width: 27px;
+            border: 2px solid #8D623D;
+            background-color:#8D623D ;
+            border-radius: 50%;
+            margin: 76px;
+            
+        }
+        #uranus{
+            height: 700px;
+            width: 700px;
+            border: 2px solid white;
+            border-radius: 50%;
+            position:absolute;
+            animation-name: planets;
+            animation-duration: 18s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .uranus{
+            height: 24px;
+            width: 24px;
+            border: 2px solid #01A8C6;
+            background-color:#01A8C6 ;
+            border-radius: 50%;
+            margin: 90px;
+        }
+        @keyframes planets{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sun">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNKRelbXgRKDa_aonODzFCpoDiQsqL16eXoB6SOMyMw&s=10" alt="">
+        </div>
+        <div id="mercury">
+            <div class="mercury"></div>
+        </div>
+        <div id="venus">
+            <div class="venus"></div>
+        </div>
+        <div id="earth">
+            <div class="earth"></div>
+        </div>
+        <div id="mars">
+            <div class="mars"></div>
+        </div>
+        <div id="jupiter">
+            <div class="jupiter"></div>
+        </div>
+        <div id="saturn">
+            <div class="saturn"></div>
+        </div>
+        <div id="uranus">
+            <div class="uranus"></div>
+        </div>
+
+    </div>
+</body>
+</html>
